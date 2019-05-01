@@ -36,9 +36,20 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   justify-items: center;
-  gap: 20px 0px;
+  gap: 25px 50px;
 }
 
 .card img {
   width: 100%;
+}
+
+.search-input {
+  padding: 25px 0 50px 0;
+}
+
+input[type="text"] {
+  border: 1px solid #ffffff;
+  font-size: 80px;
+  padding: 5px;
+  width: 50%;
 }

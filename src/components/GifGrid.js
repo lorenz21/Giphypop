@@ -39,7 +39,8 @@ class GifGrid extends Component {
       return (
         <div className="container">
             <div className="search-input">
-                <input type="text" onChange={this.gifSearch}></input>
+                <input type="text" placeholder="Search..." onChange={this.gifSearch}></input>
+                {this.state.gifResults.length !== 0 ? <h1>Searh Results</h1> : ''}
             </div>
             <div className="gif-grid">
                 {this.state.gifResults ?
